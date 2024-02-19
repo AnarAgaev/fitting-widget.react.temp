@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './variables.scss';
+
+// CSS variables
+.fitting-155e1591a41cb8386987d4d09c2ce7bf {
+	--color-primary: #000000;
+	--color-secondary: #ffffff;
+	--color-medium: #999999;
+	// --color-accent: #de5617;
+	--color-fill: #262626;
+	--color-fill-controller: rgba(255, 255, 255, 0.7);
+	--color-placeholder: #f1f1f1;
+
+	--color-scrollbar-body: #d8d8d8;
+	--color-scrollbar-tuch: #666666;
+
+	--base-indent: 20px;
+	--small-indent: 10px;
+
+	--btn-icon-size: 25px;
+
+	--base-transition: all .17s linear;
+	--controllers-transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+
+	--font-family: 'Roboto', sans-serif;
+	--font-size-root: 16px;
+}
+
+.fitting-155e1591a41cb8386987d4d09c2ce7bf {
+	margin: var(--base-indent) 0;
+	padding: 0;
+	font-family: var(--font-family);
+	font-style: normal;
+	font-weight: normal;
+	color: var(--color-primary);
+	font-size: var(--font-size-root);
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none !important;
+		transform: scale(0.9) translateY(-50%);
+		width: calc(var(--base-indent) * 2);
+		height: calc(var(--base-indent) * 2);
+		border: none;
+		border-radius: 50%;
+		background-color: var(--color-placeholder);
+		background-repeat: no-repeat;
+		transition: var(--base-transition);
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		margin: 0;
+		padding: 0;
+
+		@media (min-width: $sm) {
+			display: block !important;
+		}
+
+		@media (min-width: $lg) {
+			transform: scale(1) translateY(-50%);
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.swiper-button-prev {
+		background-position: 45% center;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxMSAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuODkyMDcgMTYuNTY3M0wxMC40NDE4IDE2LjAyMTNDMTAuNjEzNSAxNS44NDk1IDEwLjcwODEgMTUuNjIwOSAxMC43MDgxIDE1LjM3NjZDMTAuNzA4MSAxNS4xMzI0IDEwLjYxMzUgMTQuOTAzNiAxMC40NDE4IDE0LjczMTdMNC4yMTM4NCA4LjUwNDA1TDEwLjQ0ODcgMi4yNjkxOEMxMC42MjA0IDIuMDk3NjMgMTAuNzE0OCAxLjg2ODc3IDEwLjcxNDggMS42MjQ1OUMxMC43MTQ4IDEuMzgwNDIgMTAuNjIwNCAxLjE1MTQyIDEwLjQ0ODcgMC45Nzk3MzZMOS45MDIzNyAwLjQzMzY2MUM5LjU0NzA4IDAuMDc4MTAyNSA4Ljk2ODM1IDAuMDc4MTAyNCA4LjYxMzA3IDAuNDMzNjYxTDEuMTYzMDEgNy44NTcwM0MwLjk5MTQ1OSA4LjAyODU3IDAuODcwNTkgOC4yNTcxNiAwLjg3MDU5IDguNTAzNTFMMC44NzA1OSA4LjUwNjM1QzAuODcwNTkgOC43NTA2NiAwLjk5MTU5NCA4Ljk3OTI2IDEuMTYzMDEgOS4xNTA4TDguNTkyODcgMTYuNTY3M0M4Ljc2NDQyIDE2LjczOTEgOC45OTk5MiAxNi44MzM0IDkuMjQ0MSAxNi44MzM3QzkuNDg4NDEgMTYuODMzNyA5LjcyMDY2IDE2LjczOTEgOS44OTIwNyAxNi41NjczWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==");
+		left: var(--small-indent);
+
+		&.swiper-button-disabled {
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxMSAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuODkyMDcgMTYuNTY3M0wxMC40NDE4IDE2LjAyMTNDMTAuNjEzNSAxNS44NDk1IDEwLjcwODEgMTUuNjIwOSAxMC43MDgxIDE1LjM3NjZDMTAuNzA4MSAxNS4xMzI0IDEwLjYxMzUgMTQuOTAzNiAxMC40NDE4IDE0LjczMTdMNC4yMTM4NCA4LjUwNDA1TDEwLjQ0ODcgMi4yNjkxOEMxMC42MjA0IDIuMDk3NjMgMTAuNzE0OCAxLjg2ODc3IDEwLjcxNDggMS42MjQ1OUMxMC43MTQ4IDEuMzgwNDIgMTAuNjIwNCAxLjE1MTQyIDEwLjQ0ODcgMC45Nzk3MzZMOS45MDIzNyAwLjQzMzY2MUM5LjU0NzA4IDAuMDc4MTAyNSA4Ljk2ODM1IDAuMDc4MTAyNCA4LjYxMzA3IDAuNDMzNjYxTDEuMTYzMDEgNy44NTcwM0MwLjk5MTQ1OSA4LjAyODU3IDAuODcwNTkgOC4yNTcxNiAwLjg3MDU5IDguNTAzNTFMMC44NzA1OSA4LjUwNjM1QzAuODcwNTkgOC43NTA2NiAwLjk5MTU5NCA4Ljk3OTI2IDEuMTYzMDEgOS4xNTA4TDguNTkyODcgMTYuNTY3M0M4Ljc2NDQyIDE2LjczOTEgOC45OTk5MiAxNi44MzM0IDkuMjQ0MSAxNi44MzM3QzkuNDg4NDEgMTYuODMzNyA5LjcyMDY2IDE2LjczOTEgOS44OTIwNyAxNi41NjczWiIgZmlsbD0iI0IxQjFCMSIvPgo8L3N2Zz4K");
+		}
+	}
+
+	.swiper-button-next {
+		background-position: 56% center;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxMSAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMTA3OTMgMC40MzI3NDFMMC41NTgxOTUgMC45Nzg2ODFDMC4zODY1MTQgMS4xNTA1IDAuMjkxOTMzIDEuMzc5MDkgMC4yOTE5MzMgMS42MjM0QzAuMjkxOTMzIDEuODY3NTggMC4zODY1MTQgMi4wOTY0NCAwLjU1ODE5NSAyLjI2ODI2TDYuNzg2MTYgOC40OTU5NUwwLjU1MTI4MyAxNC43MzA4QzAuMzc5NjAyIDE0LjkwMjQgMC4yODUxNTYgMTUuMTMxMiAwLjI4NTE1NiAxNS4zNzU0QzAuMjg1MTU2IDE1LjYxOTYgMC4zNzk2MDIgMTUuODQ4NiAwLjU1MTI4MyAxNi4wMjAzTDEuMDk3NjMgMTYuNTY2M0MxLjQ1MjkyIDE2LjkyMTkgMi4wMzE2NSAxNi45MjE5IDIuMzg2OTMgMTYuNTY2M0w5LjgzNjk5IDkuMTQyOTdDMTAuMDA4NSA4Ljk3MTQzIDEwLjEyOTQgOC43NDI4NCAxMC4xMjk0IDguNDk2NDlMMTAuMTI5NCA4LjQ5MzY1QzEwLjEyOTQgOC4yNDkzNCAxMC4wMDg0IDguMDIwNzQgOS44MzY5OSA3Ljg0OTJMMi40MDcxMyAwLjQzMjc0MUMyLjIzNTU4IDAuMjYwOTI0IDIuMDAwMDggMC4xNjY2MTUgMS43NTU5IDAuMTY2MzQ0QzEuNTExNTkgMC4xNjYzNDQgMS4yNzkzNCAwLjI2MDkyMyAxLjEwNzkzIDAuNDMyNzQxWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==");
+		right: var(--small-indent);
+
+		&.swiper-button-disabled {
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxMSAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMTA3OTMgMC40MzI3NDFMMC41NTgxOTUgMC45Nzg2ODFDMC4zODY1MTQgMS4xNTA1IDAuMjkxOTMzIDEuMzc5MDkgMC4yOTE5MzMgMS42MjM0QzAuMjkxOTMzIDEuODY3NTggMC4zODY1MTQgMi4wOTY0NCAwLjU1ODE5NSAyLjI2ODI2TDYuNzg2MTYgOC40OTU5NUwwLjU1MTI4MyAxNC43MzA4QzAuMzc5NjAyIDE0LjkwMjQgMC4yODUxNTYgMTUuMTMxMiAwLjI4NTE1NiAxNS4zNzU0QzAuMjg1MTU2IDE1LjYxOTYgMC4zNzk2MDIgMTUuODQ4NiAwLjU1MTI4MyAxNi4wMjAzTDEuMDk3NjMgMTYuNTY2M0MxLjQ1MjkyIDE2LjkyMTkgMi4wMzE2NSAxNi45MjE5IDIuMzg2OTMgMTYuNTY2M0w5LjgzNjk5IDkuMTQyOTdDMTAuMDA4NSA4Ljk3MTQzIDEwLjEyOTQgOC43NDI4NCAxMC4xMjk0IDguNDk2NDlMMTAuMTI5NCA4LjQ5MzY1QzEwLjEyOTQgOC4yNDkzNCAxMC4wMDg0IDguMDIwNzQgOS44MzY5OSA3Ljg0OTJMMi40MDcxMyAwLjQzMjc0MUMyLjIzNTU4IDAuMjYwOTI0IDIuMDAwMDggMC4xNjY2MTUgMS43NTU5IDAuMTY2MzQ0QzEuNTExNTkgMC4xNjYzNDQgMS4yNzkzNCAwLjI2MDkyMyAxLjEwNzkzIDAuNDMyNzQxWiIgZmlsbD0iI0IxQjFCMSIvPgo8L3N2Zz4K");
+		}
+	}
+
+	.swiper-button-disabled {
+		opacity: 0.8;
+		cursor: default;
+		pointer-events: initial;
+	}
+}
+
+.fitting-155e1591a41cb8386987d4d09c2ce7bf * {
+	box-sizing: border-box;
+}
+
+.custom-scroll-vertical {
+	//- Стили для firefox
+	scrollbar-color: var(--color-fill) transparent;
+	scrollbar-width: thin;
+
+	//- скроллбар
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: auto;
+		background: transparent;
+		border-radius: 999px;
+		cursor: pointer;
+	}
+
+	//- кнопки управления полузунком и скроллом
+	&::-webkit-scrollbar-button {
+		display: none;
+		width: 0;
+		height: 0;
+		background-color: transparent;
+	}
+
+	//- Цвет дорожки, по которой двигается бегунок прокрутки.
+	&::-webkit-scrollbar-track {
+		background: var(--color-scrollbar-body);
+		border-radius: 999px;
+	}
+
+	//- видимая часть трека
+	&::-webkit-scrollbar-track-piece {
+		position: initial;
+	}
+
+	//- Цвет бегунка полосы, а так же его закругление.
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--color-scrollbar-tuch);
+		border-radius: 999px;
+
+		&:hover {
+			background-color: var(--color-fill);
+		}
+	}
+
+	//- уголоки на кнопках уаправления ползунком
+	&::-webkit-scrollbar-corner {
+	display: none;
+	width: 0;
+	height: 0;
+	background-color: transparent;
+	}
+
+	//- Основная ширина полосы прокрутки.
+	&::-webkit-resizer {
+		position: initial;
+	}
+}
+
+.tippy-tooltip {
+	font-family: 'Roboto' !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+	font-size: 12px !important;
+	line-height: 14px !important;
+	color: white !important;
+	padding: 6px 7px !important;
+	border-radius: 3px !important;
+	background: #212121 !important;
+	letter-spacing: 0.2px !important;
+}
+
+.tippy-tooltip [x-circle] {
+	background: #212121 !important;
+	opacity: 0 !important;
+}
+
+.tippy-popper[x-placement^=top] [x-arrow] {
+	border-top: 6px solid #212121;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	bottom: -6px;
+	margin: 0 9px;
+}
+
+.customGuide  {
+
+	border-radius: 0;
+
+	* {
+		font-family: 'Roboto', sans-serif !important;
+		color: #000000;
+	}
+
+	.introjs-helperNumberLayer {
+		opacity: 0.75;
+		padding-top: 0;
+	}
+
+	.introjs-tooltiptext {
+		padding: 10px !important;
+		line-height: 1.2 !important;
+	}
+
+	.introjs-tooltipbuttons {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		border: none !important;
+		border-top: 1px dashed #d8d8d8 !important;
+
+		&::after {
+			display: none !important;
+		}
+	}
+
+	.introjs-skipbutton {
+		font-size: 30px;
+		font-weight: 300;
+		opacity: 0.7;
+		transition: opacity .17s linear;
+
+		@media (min-width: 1200px) {
+				&:hover {
+					opacity: 1;
+				}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		width: 100%;
+		height: 40px;
+		background-color: #262626;
+    	font-size: 14px;
+		text-align: center;
+    	color: white !important;
+    	border: 2px solid#262626;
+    	transition: all .17s linear;
+		text-decoration: none !important;
+		cursor: pointer;
+		user-select: none;
+
+		@media (min-width: 1200px) {
+			&:hover {
+				background-color: white;
+				color: black !important;
+			}
+		}
+
+		&.introjs-hidden {
+			display: none !important;
+		}
+	}
+}
+
+.introjs-helperLayer {
+	box-shadow: rgba(33, 33, 33, 0.8) 0px 0px 0px 1px, rgba(33, 33, 33, 0.5) 0px 0px 0px 5000px !important;
+	border-radius: 0 !important;
+}

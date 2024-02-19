@@ -1,0 +1,19 @@
+(function() {
+function add(type, value) {
+let element
+if(type === 'script') {
+element = document.createElement('script')
+element.type = 'module'
+element.crossorigin = true
+element.src = value
+}
+if(type === 'style') {
+element = document.createElement('link')
+element.rel = 'stylesheet'
+element.href = value
+}
+document.body.appendChild(element)
+}
+<% scripts.forEach(function(script) { %>add('script','<%=assetsUrl%><%=script%>'); <% }) %>
+<% styles.forEach(function(style) { if(style === 'main.min.css') return; %>add('style','<%=assetsUrl%><%=style%>'); <% }) %>
+})()

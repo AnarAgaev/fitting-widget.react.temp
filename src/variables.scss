@@ -1,0 +1,24 @@
+// Breakpoints for Scss media quires
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// Extensions
+.placeholder-animation {
+	background: linear-gradient(
+		105deg,
+		var(--color-placeholder) 10%,
+		var(--color-secondary) 20%,
+		var(--color-placeholder) 30%
+	);
+	background-size: 200% 100%;
+	animation: placeholder-animation 2s linear infinite;
+}
+
+@keyframes placeholder-animation {
+	100% {
+		background-position-x: -200%;
+	}
+}

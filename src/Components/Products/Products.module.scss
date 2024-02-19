@@ -1,0 +1,70 @@
+@import '../../variables.scss';
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-indent);
+  height: auto;
+
+  @media (min-width: $lg) {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 700px;
+  }
+
+  @media (min-width: $xl) {
+    height: 850px;
+  }
+
+  &_resize {
+    @media (min-width: $lg) {
+      height: 650px;
+    }
+
+    @media (min-width: $xl) {
+      height: 790px;
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $lg) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 16px;
+  }
+}
+
+.caption {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 400;
+
+  @media (min-width: $xl) {
+    font-size: 25px;
+    padding-right: 40px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--color-primary);
+  font-weight: 400;
+  background-color: var(--color-placeholder);
+  padding: var(--base-indent);
+
+  @media (min-width: $xl) {
+    font-size: 20px;
+  }
+}

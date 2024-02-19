@@ -1,0 +1,101 @@
+@import '../../variables.scss';
+
+.swiper {
+  width: 100%;
+}
+
+.slide {
+  width: auto !important;
+
+  &:last-child > div {
+    &::after {
+      width: 100%;
+    }
+
+    @media (min-width: $sm) {
+      width: 140px;
+      padding-right: 0;
+    }
+
+    @media (min-width: $lg) {
+      width: 220px;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  width: 170px;
+  height: 80px;
+  margin: 0;
+  padding: 0 var(--base-indent) 0 0;
+
+  @media (min-width: $sm) {
+    width: 150px;
+    padding-right: var(--small-indent);
+  }
+
+  @media (min-width: $md) {
+    padding-right: var(--base-indent);
+  }
+
+  @media (min-width: $lg) {
+    width: 240px;
+    height: 130px;
+  }
+}
+
+.btn {
+  @extend .placeholder-animation;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-placeholder);
+}
+
+.hover, .active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  box-shadow: inset 0 0 0 0 transparent;
+  transition: var(--base-transition);
+}
+
+.hover {
+  @media (min-width: $xl) {
+    &:hover {
+      box-shadow: inset 0 0 0 2px var(--color-fill);
+    }
+  }
+}
+
+.active {
+  cursor: default;
+  box-shadow: inset 0 0 0 2px var(--color-fill);
+}
+
+.pic {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: var(--base-transition);
+
+  &_loaded {
+    opacity: 1;
+  }
+}

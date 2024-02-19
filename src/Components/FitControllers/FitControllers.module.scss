@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.fitControllerList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: var(--small-indent);
+	right: 0;
+	transform: translateY(calc(100% + var(--base-indent)));
+	transition: var(--controllers-transition);
+	z-index: 1;
+
+	@media (min-width: $lg) {
+		flex-direction: row;
+		gap: 0;
+		width: auto;
+		bottom: var(--base-indent);
+		transform: translateX(100%);
+		border: 1px solid var(--color-medium);
+		background: var(--color-fill-controller);
+	}
+
+	&_visible {
+		transform: translateY(0);
+	}
+
+	&_learning {
+		background-color: var(--color-secondary) !important;
+	}
+}

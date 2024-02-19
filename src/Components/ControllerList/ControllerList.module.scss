@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0 var(--base-indent);
+	border: 1px solid var(--color-medium);
+	background: var(--color-fill-controller);
+	height: 45px;
+
+	@media (min-width: $lg) {
+		padding: var(--small-indent);
+		border: none;
+		background: transparent;
+	}
+}
+
+ul + .list {
+	@media (min-width: $lg) {
+		margin: 0 calc(var(--small-indent) * -1);
+	}
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+
+	@media (min-width: $lg) {
+		margin: 0 calc(var(--btn-icon-size) / 2);
+	}
+
+	&_select {
+		@media (min-width: $lg) {
+			display: none;
+		}
+	}
+
+	&_toggle {
+		@media (max-width: calc($lg - 1px)) {
+			position: relative;
+			display: none;
+		}
+	}
+}

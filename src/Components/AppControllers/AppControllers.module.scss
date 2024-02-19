@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.appControllerList {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin-bottom: var(--small-indent);
+	transform: translateX(calc(-100% + 70px));
+	transition: var(--controllers-transition);
+	z-index: 1;
+
+	@media (min-width: $lg) {
+		position: absolute;
+		top: var(--base-indent);
+		left: 0;
+		border: 1px solid var(--color-medium);
+		background: var(--color-fill-controller);
+	}
+
+	&_visible {
+		transform: translateY(0);
+
+		&::before {
+			height: 0 !important;
+			opacity: 0 !important;
+			top: 50% !important
+		}
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 68px;
+		width: 1px;
+		height: 100%;
+		opacity: 1;
+		background-color: var(--color-medium);
+		transition: var(--controllers-transition);
+		z-index: 1;
+	}
+
+	&_learning {
+		background-color: var(--color-secondary) !important;
+	}
+}

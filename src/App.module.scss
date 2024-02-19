@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-indent);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-indent);
+  position: relative;
+  min-height: 200px;
+
+  @media (min-width: $lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (min-width: $lg) {
+    font-size: 32px;
+  }
+}
+
+.views {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $lg) {
+    width: calc(100% - 200px - var(--base-indent));
+  }
+
+  @media (min-width: $xl) {
+    width: calc(100% - 335px - var(--base-indent));
+  }
+}
+
+.products {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $lg) {
+    width: 200px;
+  }
+
+  @media (min-width: $xl) {
+    width: 335px;
+  }
+}

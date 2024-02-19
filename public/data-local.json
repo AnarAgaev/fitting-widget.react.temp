@@ -1,0 +1,208 @@
+{
+	"selected": {
+		"id": "1",
+		"active": false,
+		"name": "Подвесная люстра Arte Lamp AURORA A1150LM-5CC",
+		"height": "25 см",
+		"width": "25 см",
+		"length": "25 см",
+		"image": "images/products/1.png",
+		"preview": "images/preview/1.jpg",
+		"link": "https://fandeco.ru/catalog/ljustry/A1150LM-5CC/"
+	},
+	"viewed": [
+		{
+			"id": "2",
+			"active": false,
+			"name": "Люстра на штанге Arte Lamp ARANCIA A9276LM-12CC",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/2.png",
+			"preview": "images/preview/2.jpg",
+			"link": "https://fandeco.ru/catalog/ljustry/A9276LM-12CC/"
+		},
+		{
+			"id": "3",
+			"active": false,
+			"name": "Подвесная люстра Arte Lamp MARGHERITA A7021LM-5WH",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/3.png",
+			"preview": "images/preview/3.jpg",
+			"link": "https://fandeco.ru/catalog/svetilniki/A7021LM-5WH/"
+		},
+		{
+			"id": "4",
+			"active": false,
+			"name": "Потолочная люстра Arte Lamp CHARLOTTE A7062PL-3AB",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/4.png",
+			"preview": "images/preview/4.jpg",
+			"link": "https://fandeco.ru/catalog/svetilniki/A7062PL-3AB/"
+		},
+		{
+			"id": "5",
+			"active": false,
+			"name": "Подвесная люстра Arte Lamp ANNA MARIA A4280LM-6CC",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/5.png",
+			"preview": "images/preview/5.jpg",
+			"link": "https://fandeco.ru/catalog/ljustry/A4280LM-6CC/"
+		},
+		{
+			"id": "6",
+			"active": false,
+			"name": "Подвесная люстра Arte Lamp TURANDOT A4012LM-5CC",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/6.png",
+			"preview": "images/preview/6.jpg",
+			"link": "https://fandeco.ru/catalog/svetilniki/A4012LM-5CC/"
+		},
+		{
+			"id": "7",
+			"active": false,
+			"name": "Подвесная люстра Arte Lamp HUGO A1688LM-6CC",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/7.png",
+			"preview": "images/preview/7.jpg",
+			"link": "https://fandeco.ru/catalog/svetilniki/A1688LM-6CC/"
+		},
+		{
+			"id": "8",
+			"active": false,
+			"name": "Потолочная люстра Arte Lamp BROOKE A2717PL-5SS",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/8.png",
+			"preview": "images/preview/8.jpg",
+			"link": "https://fandeco.ru/catalog/ljustry/A2717PL-5SS/"
+		},
+		{
+			"id": "9",
+			"active": false,
+			"name": "Люстра на штанге Arte Lamp BOLLA-PICCOLO A3988SP-12AB",
+			"height": "25 см",
+			"width": "25 см",
+			"length": "25 см",
+			"image": "images/products/9.png",
+			"preview": "images/preview/9.jpg",
+			"link": "https://fandeco.ru/catalog/ljustry/A3988SP-12AB/"
+		}
+	],
+	"sketches": [
+		{
+			"id": "0",
+			"active": false,
+			"image": "images/backgrounds/0.jpg",
+			"preview": "images/thumbnail/0.jpg"
+		},
+		{
+			"id": "1",
+			"active": false,
+			"image": "images/backgrounds/1.jpg",
+			"preview": "images/thumbnail/1.jpg"
+		},
+		{
+			"id": "2",
+			"active": false,
+			"image": "images/backgrounds/2.jpg",
+			"preview": "images/thumbnail/2.jpg"
+		},
+		{
+			"id": "3",
+			"active": false,
+			"image": "images/backgrounds/3.jpg",
+			"preview": "images/thumbnail/3.jpg"
+		},
+		{
+			"id": "4",
+			"active": false,
+			"image": "images/backgrounds/4.jpg",
+			"preview": "images/thumbnail/4.jpg"
+		},
+		{
+			"id": "5",
+			"active": false,
+			"image": "images/backgrounds/5.jpg",
+			"preview": "images/thumbnail/5.jpg"
+		},
+		{
+			"id": "6",
+			"active": false,
+			"image": "images/backgrounds/6.jpg",
+			"preview": "images/thumbnail/6.jpg"
+		},
+		{
+			"id": "7",
+			"active": false,
+			"image": "images/backgrounds/7.jpg",
+			"preview": "images/thumbnail/7.jpg"
+		},
+		{
+			"id": "8",
+			"active": false,
+			"image": "images/backgrounds/8.jpg",
+			"preview": "images/thumbnail/8.jpg"
+		},
+		{
+			"id": "9",
+			"active": false,
+			"image": "images/backgrounds/9.jpg",
+			"preview": "images/thumbnail/9.jpg"
+		},
+		{
+			"id": "10",
+			"active": false,
+			"image": "images/backgrounds/10.jpg",
+			"preview": "images/thumbnail/10.jpg"
+		},
+		{
+			"id": "11",
+			"active": false,
+			"image": "images/backgrounds/11.jpg",
+			"preview": "images/thumbnail/11.jpg"
+		},
+		{
+			"id": "12",
+			"active": false,
+			"image": "images/backgrounds/12.jpg",
+			"preview": "images/thumbnail/12.jpg"
+		},
+		{
+			"id": "13",
+			"active": false,
+			"image": "images/backgrounds/13.jpg",
+			"preview": "images/thumbnail/13.jpg"
+		},
+		{
+			"id": "14",
+			"active": false,
+			"image": "images/backgrounds/14.jpg",
+			"preview": "images/thumbnail/14.jpg"
+		},
+		{
+			"id": "15",
+			"active": false,
+			"image": "images/backgrounds/15.jpg",
+			"preview": "images/thumbnail/15.jpg"
+		},
+		{
+			"id": "16",
+			"active": false,
+			"image": "images/backgrounds/16.jpg",
+			"preview": "images/thumbnail/16.jpg"
+		}
+	],
+	"backlink": "https://fandeco.ru/"
+}
